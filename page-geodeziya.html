@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Геодезия</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <header class="header">
+  <div class="container">
+    <div class="header__body">
+      <!-- logo -->
+      <a href="/" class="header__logo">
+        <img
+          loading="lazy"
+          class="header__logo-img"
+          alt="Логотип"
+          src="img/logo.svg"
+        />
+      </a>
+      <!-- burger -->
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- navigation -->
+      <nav class="header__menu">
+        <!-- header__list -->
+        <div class="main-menu">
+          <h3 class="main-menu__title">Меню</h3>
+          <div class="header__list">
+            <ul class="main-menu__list">
+              <li class="main-menu__li">
+                <a href="/page-projects.html" class="header__link link-hover">
+                  Проекты
+                </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-about.html" class="header__link link-hover"> О нас </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-services.html" class="header__link link-hover"> Услуги </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-prices.html" class="header__link link-hover">
+                  Цены
+                </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-articles.html" class="header__link link-hover"> Статьи </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-vacancy.html" class="header__link link-hover"> Вакансии </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-contacts.html" class="header__link link-hover"> Контакты </a>
+              </li>
+            </ul>
+            <div class="main-menu__contacts-mob">
+              <div class="main-menu-logo">
+                <img
+                  class="main-menu-logo__img"
+                  src="img/logo.svg"
+                  alt="лого"
+                />
+                <span class="main-menu-logo__span">
+                  Инженерные изыскания <br />
+                  в строительстве
+                </span>
+              </div>
+              <div class="main-menu__contacts-mob-phone">
+                <a
+                  class="main-menu__contacts-mob-num"
+                  href="tel:+7(495)755-02-29"
+                >
+                  <svg
+                    class="header__phone-icon-mob"
+                    width="16"
+                    height="16"
+                    style="margin-right: 20px"
+                  >
+                    <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+                  </svg>
+                  <span>+7 (495) 755-02-29</span>
+                </a>
+              </div>
+              <div class="header-social">
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- call -->
+      <div class="header__login-wrapper">
+        <a class="header__phone-link" href="tel:+7(495)755-02-29">
+          <svg class="header__phone-icon" width="16" height="16">
+            <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+          </svg>
+          <svg class="header__phone-icon-mob" width="24" height="24">
+            <use xlink:href="img/sprites/sprite.svg#phone-black"></use>
+          </svg>
+          <span class="header__phone-txt">+7 (495) 755-02-29</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+        <main class="main">
+  <section class="page-title">
+    <div class="container">
+      <div class="page-title__body">
+        <h1 class="page-title__h1">ИНЖЕНЕРНО-ГЕОДЕЗИЧЕСКИЕ ИЗЫСКАНИЯ</h1>
+        <div class="page-title__back-wrapper">
+          <a class="page-title__link" href="/page-services.html"> К услугам </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="single-service">
+      <div class="single-service__header">
+        <h2 class="single-service__h2">
+          СТОИМОСТЬ ИНЖЕНЕРНО-ГЕОДЕЗИЧЕСКИХ ИЗЫСКАНИЙ
+        </h2>
+        <span class="single-service__h2-sub">От 10 000₽ / 1 Га </span>
+      </div>
+      <div class="single-service__body">
+        <div class="single-service__item">
+          <ul class="single-service-nav">
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_1"
+                class="single-service-nav__link single-service-nav__link_1"
+              >
+                Описание услуги
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_2"
+                class="single-service-nav__link single-service-nav__link_2"
+              >
+                Цели и задачи
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_3"
+                class="single-service-nav__link single-service-nav__link_3"
+              >
+                Этапность
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_4"
+                class="single-service-nav__link single-service-nav__link_4"
+              >
+                Виды съемки при проведении геодезических работ
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_5"
+                class="single-service-nav__link single-service-nav__link_5"
+              >
+                Комплекс исследований для экологической аргументации проекта:
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="single-service__item">
+          <div class="service-descr">
+            <div class="service-descr__item">
+              <h3
+                class="service-descr__h3 service-descr__h3_1"
+                id="service-descr__h3_1"
+              >
+                Описание услуги
+              </h3>
+              <p class="service-descr__p">
+                Геодезические изыскания — комплексные мероприятия по изучению и
+                анализу ситуационных данных о рельефе земельного участка, его
+                гидросети, растительности, текущем использовании, наличии и
+                расположении зданий и сооружений, линейных объектов, наземных и
+                подземных коммуникаций.
+              </p>
+              <p class="service-descr__p">
+                Результаты инженерно-геодезических изысканий (ИГДИ) служат
+                основанием для строительного проектирования, документирования и
+                паспортизации объекта, и проведения других видов исследований.
+                Наша компания готова качественно и профессионально выполнить
+                геодезические работы любой сложности в Москве и Московской
+                области.
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3
+                class="service-descr__h3 service-descr__h3_2"
+                id="service-descr__h3_2"
+              >
+                Цели и задачи
+              </h3>
+              <p class="service-descr__p">
+                Целью исследований является изучение пространственных
+                характеристик местности и расположения объектов на ней.
+                Геодезические изыскания служат для координатного обеспечения
+                хозяйственной деятельности в строительстве и других областях.
+                Основные задачи – выполнение измерений поверхности земли,
+                создание плана подземных коммуникаций, изображение рельефа и
+                точное размещение искусственных сооружений на топографических
+                картах, планах и в натуре. Топографическая съемка при
+                планировании строительства дает оценку условий рациональности,
+                привязку к местности, окружающим объектам и инженерным сетям, в
+                соответствии с параметрами проекта и требованиями нормативных
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3
+                class="service-descr__h3 service-descr__h3_3"
+                id="service-descr__h3_3"
+              >
+                Этапность
+              </h3>
+
+              <ul class="service-descr__ul">
+                <li class="service-descr__li">
+                  Подготовительный период: получение разрешительных документов и
+                  схемы границ ИГДИ, изучение технического задания,
+                  картографического и отчетного архивного материала по участку.
+                  Разрабатывается план и методы исследований. Проводится
+                  подготовка приборов для проведения полевых работ. На этом
+                  этапе определяется стоимость геодезических работ, планируются
+                  сроки окончания, и формируется коммерческое предложение.
+                </li>
+                <li class="service-descr__li">
+                  Полевые работы: проводится рекогносцировка, инструментальная
+                  съемка местности и искусственных подземных и наземных
+                  сооружений, первичная обработка данных, построение
+                  тахеометрических ходов и абрисов топографической съемки,
+                  отслеживание выходов и трассирование подземных кабелей и
+                  коммуникаций, привязка к геодезической сети или к
+                  государственной системе координат, геодезическое сопровождение
+                  строительства.
+                </li>
+                <li class="service-descr__li">
+                  Камеральные работы: полный анализ полевых материалов с учетом
+                  архивных данных, построение карт или планов участка в заданном
+                  масштабе. Подземные коммуникации наносятся в согласовании с
+                  эксплуатирующими организациями. Составляется подробный
+                  технический отчет, который утверждается в органах
+                  градостроительства и архитектуры.
+                </li>
+                <li class="service-descr__li">
+                  Контроль качества. Для получения точных данных проводится
+                  двойной контроль: первичный – это уравнивание геодезических
+                  измерений с оценкой качества проделанных полевых работ, и
+                  полевой контроль – повторная выборочная съемка на объекте.
+                </li>
+              </ul>
+            </div>
+            <div class="service-descr__item">
+              <h3
+                class="service-descr__h3 service-descr__h3_4"
+                id="service-descr__h3_4"
+              >
+                Виды съемки при проведении геодезических работ
+              </h3>
+              <p class="service-descr__p">
+                Методика измерений гарантирует графическую точность и
+                погрешность соответствующую масштабу. Результаты исследований
+                могут быть представлены как на бумажном носителе, так и в
+                электронном виде. Геодезические инструменты проверяются и
+                проходят аттестацию раз в год, а некоторые непосредственно перед
+                началом работ. Технологии съемки идут в ногу со временем,
+                значительно улучшая качество.
+              </p>
+              <p class="service-descr__p">
+                В зависимости от применяемого оборудования и методики измерений
+                можно выделить следующие виды геодезической съемки:
+              </p>
+
+              <ul class="service-descr__ul">
+                <li class="service-descr__li">
+                  способ линейных и створных засечек
+                </li>
+                <li class="service-descr__li">линейные замеры от створов</li>
+                <li class="service-descr__li">геометрическое нивелирование</li>
+                <li class="service-descr__li">
+                  способ прямоугольных координат
+                </li>
+                <li class="service-descr__li">фототеодолитная съемка</li>
+                <li class="service-descr__li">
+                  измерение вертикальных отклонений (теодолит, отвес, приборы
+                  вертикального)
+                </li>
+                <li class="service-descr__li">использование GPS-приемников</li>
+                <li class="service-descr__li">
+                  тахеометрическая и аналитическая съемка
+                </li>
+                <li class="service-descr__li">аэрофотосъемка</li>
+                <li class="service-descr__li">лазерное сканирование</li>
+              </ul>
+              <p class="service-descr__p" style="font-weight: 700">
+                Необходимость проведения геодезических работ для строительства
+              </p>
+              <p class="service-descr__p">
+                Инженерно-топографический план – это первичный основной документ
+                для грамотного проектирования строительства, является итогом
+                проведения ИГДИ на территории планируемого объекта, срок
+                действия топографического плана для Москвы 2 года. На стадии
+                проектирования и планирования топографическая съемка
+                предоставляет исходные данные для рационального размещения
+                объекта, его привязки к местности, окружающим сооружениям и
+                инженерным сетям.
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3
+                class="service-descr__h3 service-descr__h3_5"
+                id="service-descr__h3_5"
+              >
+                Заказать инженерно-геодезические изыскаиния для строительства
+              </h3>
+
+              <p class="service-descr__p">
+                Наша компания профессионально решит поставленную задачу в
+                установленные сроки, обеспечив заказчика необходимыми
+                материалами для продвижения к цели. Организация лицензирована,
+                работает в соответствии с законом РФ и в соответствии с
+                требованиями действующих нормативных документов.
+              </p>
+
+              <p class="service-descr__p">
+                Единые расценки на геодезические изыскания отсутствуют. Цена на
+                проведение того или иного комплекса исследований индивидуальна
+                для конкретного случая. Стоимость геодезических работ в Москве и
+                Московской области напрямую зависит от сложности и
+                месторасположения объекта изучения, комплекса применяемых
+                методов, задействованного оборудования, количества и
+                квалификации геодезистов с практическими навыками и
+                соответствующими теоретическими знаниями.
+              </p>
+
+              <p class="service-descr__p">
+                Заказать инженерно геодезические изыскания для строительства в
+                нашей компании можно по доступной цене, позвонив по одному из
+                контактных телефонов, указанных на сайте.
+              </p>
+
+              <p class="service-descr__p">
+                Надежный старт проекта – наша общая цель!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+        <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="container">
+      <div class="footer__body">
+        <div class="footer__item">
+          <img class="footer__logo" src="img/logo.svg" alt="логотип" />
+          <span class="footer__logo-txt">
+            Инженерные изыскания <br />
+            в строительстве
+          </span>
+          <a href="#" class="footer__tel">
+            <svg width="16" height="16" style="margin-right: 20px">
+              <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+            </svg>
+            <span> +7 (495) 755-02-29 </span>
+          </a>
+          <div class="header-social">
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-projects.html" class="footer__link"> Проекты </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-about.html" class="footer__link"> О нас </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-services.html" class="footer__link"> Услуги </a>
+            </li>
+          </ul>
+          <div class="footer__dev"></div>
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-prices.html" class="footer__link"> Цены </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-articles.html" class="footer__link"> Статьи </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-vacancy.html" class="footer__link"> Вакансии </a>
+            </li>
+          </ul>
+          <div class="footer__dev"></div>
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-contacts.html" class="footer__link"> Контакты </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <ul class="footer-social">
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="footer__rules">
+      НОЭКС. Все права защищены 2021©. Инженерные изыскания с 1999 года.
+    </p>
+  </div>
+</footer>
+
+<div class="popup popup_main-popup hide">
+  <div class="main-popup">
+    <div class="main-popup__header">
+      <h3 class="main-popup__title">Оставить заявку</h3>
+      <div class="popup-close popup-close_esc"></div>
+    </div>
+    <div class="main-popup__body">
+      <form action="#" class="main-form">
+        <div class="main-form__item">
+          <span class="main-form__span">Имя</span>
+          <input
+            type="text"
+            name="phone"
+            class="main-form__input"
+            placeholder="Введите имя"
+            required
+            maxlength="14"
+          />
+        </div>
+        <div class="main-form__item">
+          <span class="main-form__span">Телефон</span>
+          <input
+            type="text"
+            name="phone"
+            class="main-form__input"
+            placeholder="+7 (---) --- -- --"
+            required
+            maxlength="14"
+          />
+        </div>
+        <div class="main-form__item">
+          <span class="main-form__span">Электронная почта</span>
+          <input
+            type="text"
+            name="email"
+            class="main-form__input"
+            placeholder="@"
+          />
+        </div>
+        <div class="main-form__item main-form__item_politic">
+          <p class="main-form__politic">
+            Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку
+            персональных данных
+          </p>
+        </div>
+        <div class="main-form__item">
+          <div>
+            <button type="submit" class="main-btn main-btn_yellow">
+              отправить
+            </button>
+          </div>
+          <div style="margin-top: 10px">
+            <button type="button" class="main-btn main-btn_gray popup-close">
+              закрыть
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

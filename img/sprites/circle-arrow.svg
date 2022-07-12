@@ -1,0 +1,22 @@
+ <svg
+        class="types__link-icon"
+        width="60"
+        height="61"
+        viewBox="0 0 60 61"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.75 24L33.25 30.5L26.75 37"
+          stroke-opacity="0.5"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <rect
+          x="0.5"
+          y="1"
+          width="59"
+          height="59"
+          rx="29.5"
+          stroke-opacity="0.5"
+        />
+      </svg>

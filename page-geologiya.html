@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Геология</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <header class="header">
+  <div class="container">
+    <div class="header__body">
+      <!-- logo -->
+      <a href="/" class="header__logo">
+        <img
+          loading="lazy"
+          class="header__logo-img"
+          alt="Логотип"
+          src="img/logo.svg"
+        />
+      </a>
+      <!-- burger -->
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- navigation -->
+      <nav class="header__menu">
+        <!-- header__list -->
+        <div class="main-menu">
+          <h3 class="main-menu__title">Меню</h3>
+          <div class="header__list">
+            <ul class="main-menu__list">
+              <li class="main-menu__li">
+                <a href="/page-projects.html" class="header__link link-hover">
+                  Проекты
+                </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-about.html" class="header__link link-hover"> О нас </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-services.html" class="header__link link-hover"> Услуги </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-prices.html" class="header__link link-hover">
+                  Цены
+                </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-articles.html" class="header__link link-hover"> Статьи </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-vacancy.html" class="header__link link-hover"> Вакансии </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-contacts.html" class="header__link link-hover"> Контакты </a>
+              </li>
+            </ul>
+            <div class="main-menu__contacts-mob">
+              <div class="main-menu-logo">
+                <img
+                  class="main-menu-logo__img"
+                  src="img/logo.svg"
+                  alt="лого"
+                />
+                <span class="main-menu-logo__span">
+                  Инженерные изыскания <br />
+                  в строительстве
+                </span>
+              </div>
+              <div class="main-menu__contacts-mob-phone">
+                <a
+                  class="main-menu__contacts-mob-num"
+                  href="tel:+7(495)755-02-29"
+                >
+                  <svg
+                    class="header__phone-icon-mob"
+                    width="16"
+                    height="16"
+                    style="margin-right: 20px"
+                  >
+                    <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+                  </svg>
+                  <span>+7 (495) 755-02-29</span>
+                </a>
+              </div>
+              <div class="header-social">
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- call -->
+      <div class="header__login-wrapper">
+        <a class="header__phone-link" href="tel:+7(495)755-02-29">
+          <svg class="header__phone-icon" width="16" height="16">
+            <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+          </svg>
+          <svg class="header__phone-icon-mob" width="24" height="24">
+            <use xlink:href="img/sprites/sprite.svg#phone-black"></use>
+          </svg>
+          <span class="header__phone-txt">+7 (495) 755-02-29</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+        <main class="main">
+  <section class="page-title">
+    <div class="container">
+      <div class="page-title__body">
+        <h1 class="page-title__h1">Инженерно-геологические изыскания</h1>
+        <div class="page-title__back-wrapper">
+          <a class="page-title__link" href="/page-services.html"> К услугам </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="single-service">
+      <div class="single-service__header">
+        <h2 class="single-service__h2">Буровые работы</h2>
+        <span class="single-service__h2-sub">От 18 000₽ / опыт</span>
+        <div class="single-service__img-wrapper">
+          <img
+            src="img/services/burovie-raboty.webp"
+            alt="буровые работы"
+            class="single-service__img"
+          />
+        </div>
+      </div>
+      <div class="single-service__body">
+        <div class="single-service__item">
+          <ul class="single-service-nav">
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_1"
+                class="single-service-nav__link single-service-nav__link_1"
+              >
+                Описание услуги
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_2"
+                class="single-service-nav__link single-service-nav__link_2"
+              >
+                Цели и задачи
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_3"
+                class="single-service-nav__link single-service-nav__link_3"
+              >
+                Типы скважин
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_4"
+                class="single-service-nav__link single-service-nav__link_4"
+              >
+                Преимущества
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="single-service__item">
+          <div class="service-descr">
+            <div class="service-descr__item">
+              <h3 class="service-descr__h3 service-descr__h3_1" id="service-descr__h3_1">
+                Описание услуги
+              </h3>
+              <p class="service-descr__p">
+                Прежде чем начинать строительство площадных объектов, к которым
+                относят здания и сооружения вне зависимости от их назначения,
+                или же линейных объектов (ЛЭП, автомобильных и железных дорог,
+                трубопроводов) необходимо изучить территорию, предназначенную
+                для будущего строительства.
+              </p>
+              <p class="service-descr__p">
+                Наиболее детальную информацию о внутреннем строении участка
+                специалисты получают, основываясь на данных бурения. Для более
+                глубокого понимания обратимся к определению. Бурение для
+                геологических изысканий — это процесс создания скважин различных
+                параметров (диаметра и глубины), с целью изучения
+                геологического, а так же гидрогеологического строения участка,
+                знание которого является необходимым для проведения успешных и
+                качественных инженерно геологических изысканий. Рассмотрим
+                данную разновидность исследований более подробно.
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3 class="service-descr__h3 service-descr__h3_2" id="service-descr__h3_2">
+                Цели и задачи
+              </h3>
+              <p class="service-descr__p">
+                Бурением различных типов инженерно геологических скважин
+                решается множество задач. В первую очередь специалистами
+                определяется не только геологическое строение территории, но и
+                водные (гидрогеологические) условия участка.
+              </p>
+              <p class="service-descr__p">
+                В ходе бурения осуществляется отбор проб грунта для изучения
+                литологического состава пород, их состояния, физических и
+                механических свойств. Изучение свойств грунтов проводится в
+                специализированных грунтовых лабораториях. Относительно принятых
+                стандартов по отобранным образцам керна (цилиндрам выбуренной
+                породы) определяются прочностные и деформационные свойства,
+                пластичность, влажность, текучесть, а так же специальные
+                параметры, используемые для создания расчетных моделей. На этих
+                данных основываются рекомендации по возведению проектируемого
+                сооружения.
+              </p>
+              <p class="service-descr__p">
+                Как часто требуется бурить скважины? Ответ на этот вопрос
+                напрямую зависит от категории сложности геологических условий
+                участка, а так же уровня ответственности сооружения или
+                линейного объекта
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3 class="service-descr__h3 service-descr__h3_3" id="service-descr__h3_3">
+                Типы скважин
+              </h3>
+              <p class="service-descr__p">
+                В зависимости от назначения, технологии и цели отбора
+                выбуренного материала (керна), скважины подразделяются на
+                следующие типы:
+              </p>
+              <ul class="service-descr__ul">
+                <li class="service-descr__li">
+                  Разведочные. Целью бурения скважин этого типа является
+                  детализированное изучение геологического разреза территории.
+                  На основании отбора керна определяют мощности отложений,
+                  состав грунтов и пород, их структурно-текстурные особенности.
+                </li>
+                <li class="service-descr__li">
+                  Технические. Представляют собой разновидность разведочных
+                  скважин. В ходе бурения отбираются пробы, естественное
+                  сложение которых не было нарушено. Далее лабораторно
+                  определяются их физические и механические свойства.
+                </li>
+                <li class="service-descr__li">
+                  Гидрогеологические. Используются для проведения опытных
+                  испытаний фильтрационных характеристик отложений водоносного
+                  слоя.
+                </li>
+                <li class="service-descr__li">Специального назначения.</li>
+              </ul>
+              <p class="service-descr__p">
+                Отбор образцов производится согласно инструкции и принятых
+                стандартов. Как правило, осуществляется сплошной отбор керна, но
+                в некоторых ситуациях керн отбирают через определенные
+                интервалы. По завершению работ скважины ликвидируются согласно
+                инструкции о ликвидации и тампонаже скважин
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3 class="service-descr__h3 service-descr__h3_4" id="service-descr__h3_4">
+                Преимущества
+              </h3>
+              <p class="service-descr__p">
+                Качественное проведение буровых работ — это необходимое условие
+                получения подлинной информации о геологическом, а так же
+                гидрогеологическом строении участка. Как следствие, бурение
+                является основой надежного, качественного и оптимального проекта
+                строительства. Именно поэтому обращаться нужно к опытным
+                специалистам.
+              </p>
+              <p class="service-descr__p">
+                К списку наших преимуществ относится применение современных
+                буровых технологий. Как следствие, качество отбираемых образцов
+                заметно возрастает, что позволяет получить наиболее точные
+                результаты в ходе лабораторных исследований.
+              </p>
+              <p class="service-descr__p">
+                За 30 лет работы нами не получено ни одно отрицательное
+                заключение экспертизы и успешно завершено более 1000 проектов.
+                Мы рады использовать накопленный в течение стольких лет опыт и
+                профессиональные знания на благо вашего строительства! Команда
+                специалистов обеспечит выполнение необходимого комплекса работ,
+                соблюдение предварительно составленного плана и сроков по
+                доступной для вас цене. Ознакомьтесь с нашими расценками в
+                разделе прайс. Чтобы рассчитать точную стоимость работ, оставьте
+                заявку, и наши менеджеры свяжутся с вами.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+        <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="container">
+      <div class="footer__body">
+        <div class="footer__item">
+          <img class="footer__logo" src="img/logo.svg" alt="логотип" />
+          <span class="footer__logo-txt">
+            Инженерные изыскания <br />
+            в строительстве
+          </span>
+          <a href="#" class="footer__tel">
+            <svg width="16" height="16" style="margin-right: 20px">
+              <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+            </svg>
+            <span> +7 (495) 755-02-29 </span>
+          </a>
+          <div class="header-social">
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-projects.html" class="footer__link"> Проекты </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-about.html" class="footer__link"> О нас </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-services.html" class="footer__link"> Услуги </a>
+            </li>
+          </ul>
+          <div class="footer__dev"></div>
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-prices.html" class="footer__link"> Цены </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-articles.html" class="footer__link"> Статьи </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-vacancy.html" class="footer__link"> Вакансии </a>
+            </li>
+          </ul>
+          <div class="footer__dev"></div>
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-contacts.html" class="footer__link"> Контакты </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <ul class="footer-social">
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="footer__rules">
+      НОЭКС. Все права защищены 2021©. Инженерные изыскания с 1999 года.
+    </p>
+  </div>
+</footer>
+
+<div class="popup popup_main-popup hide">
+  <div class="main-popup">
+    <div class="main-popup__header">
+      <h3 class="main-popup__title">Оставить заявку</h3>
+      <div class="popup-close popup-close_esc"></div>
+    </div>
+    <div class="main-popup__body">
+      <form action="#" class="main-form">
+        <div class="main-form__item">
+          <span class="main-form__span">Имя</span>
+          <input
+            type="text"
+            name="phone"
+            class="main-form__input"
+            placeholder="Введите имя"
+            required
+            maxlength="14"
+          />
+        </div>
+        <div class="main-form__item">
+          <span class="main-form__span">Телефон</span>
+          <input
+            type="text"
+            name="phone"
+            class="main-form__input"
+            placeholder="+7 (---) --- -- --"
+            required
+            maxlength="14"
+          />
+        </div>
+        <div class="main-form__item">
+          <span class="main-form__span">Электронная почта</span>
+          <input
+            type="text"
+            name="email"
+            class="main-form__input"
+            placeholder="@"
+          />
+        </div>
+        <div class="main-form__item main-form__item_politic">
+          <p class="main-form__politic">
+            Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку
+            персональных данных
+          </p>
+        </div>
+        <div class="main-form__item">
+          <div>
+            <button type="submit" class="main-btn main-btn_yellow">
+              отправить
+            </button>
+          </div>
+          <div style="margin-top: 10px">
+            <button type="button" class="main-btn main-btn_gray popup-close">
+              закрыть
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

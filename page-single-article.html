@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Страница новости</title>
+    <meta name="theme-color" content="#fff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/favicons/apple-touch-icon-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
+    <link rel="stylesheet" href="styles/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__body">
+      <!-- logo -->
+      <a href="/" class="header__logo">
+        <img
+          loading="lazy"
+          class="header__logo-img"
+          alt="Логотип"
+          src="img/logo.svg"
+        />
+      </a>
+      <!-- burger -->
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- navigation -->
+      <nav class="header__menu">
+        <!-- header__list -->
+        <div class="main-menu">
+          <h3 class="main-menu__title">Меню</h3>
+          <div class="header__list">
+            <ul class="main-menu__list">
+              <li class="main-menu__li">
+                <a href="/page-projects.html" class="header__link link-hover">
+                  Проекты
+                </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-about.html" class="header__link link-hover"> О нас </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-services.html" class="header__link link-hover"> Услуги </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-prices.html" class="header__link link-hover">
+                  Цены
+                </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-articles.html" class="header__link link-hover"> Статьи </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-vacancy.html" class="header__link link-hover"> Вакансии </a>
+              </li>
+              <li class="main-menu__li">
+                <a href="/page-contacts.html" class="header__link link-hover"> Контакты </a>
+              </li>
+            </ul>
+            <div class="main-menu__contacts-mob">
+              <div class="main-menu-logo">
+                <img
+                  class="main-menu-logo__img"
+                  src="img/logo.svg"
+                  alt="лого"
+                />
+                <span class="main-menu-logo__span">
+                  Инженерные изыскания <br />
+                  в строительстве
+                </span>
+              </div>
+              <div class="main-menu__contacts-mob-phone">
+                <a
+                  class="main-menu__contacts-mob-num"
+                  href="tel:+7(495)755-02-29"
+                >
+                  <svg
+                    class="header__phone-icon-mob"
+                    width="16"
+                    height="16"
+                    style="margin-right: 20px"
+                  >
+                    <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+                  </svg>
+                  <span>+7 (495) 755-02-29</span>
+                </a>
+              </div>
+              <div class="header-social">
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+                <a href="#" class="header-social__item">
+                  <svg class="header__phone-icon-mob" width="24" height="24">
+                    <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- call -->
+      <div class="header__login-wrapper">
+        <a class="header__phone-link" href="tel:+7(495)755-02-29">
+          <svg class="header__phone-icon" width="16" height="16">
+            <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+          </svg>
+          <svg class="header__phone-icon-mob" width="24" height="24">
+            <use xlink:href="img/sprites/sprite.svg#phone-black"></use>
+          </svg>
+          <span class="header__phone-txt">+7 (495) 755-02-29</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+  <section class="page-title">
+    <div class="container">
+      <div class="page-title__body">
+        <h1 class="page-title__h1">Страница новости</h1>
+        <div class="page-title__back-wrapper">
+          <a class="page-title__link" href="/page-articles.html">
+            К новостям
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="single-service">
+      <div class="single-service__header">
+        <h2
+          class="single-service__h2 single-service__h2_article"
+          id="service-descr__h3_1"
+        >
+          Наши преимущества при инженерно-экологических изысканиях
+        </h2>
+      </div>
+      <div class="single-service__body">
+        <div class="single-service__item">
+          <h3 class="single-service__h3">Навигация по статье</h3>
+          <ul class="single-service-nav">
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_1"
+                class="single-service-nav__link single-service-nav__link_1 single-service-nav__link_active"
+              >
+                Наши преимущества при инженерно-экологических изысканиях
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_2"
+                class="single-service-nav__link single-service-nav__link_2"
+              >
+                Подробнее об инженерно-экологических изысканиях и схеме
+                сотрудничества
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_3"
+                class="single-service-nav__link single-service-nav__link_3"
+              >
+                Подробнее об инженерно-экологических изысканиях и схеме
+                сотрудничества
+              </a>
+            </li>
+            <li class="single-service-nav__li">
+              <a
+                href="#service-descr__h3_4"
+                class="single-service-nav__link single-service-nav__link_4"
+              >
+                О стоимость инженерно-экологических изысканий
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="single-service__item">
+          <div class="service-descr">
+            <div class="service-descr__item">
+              <img
+                class="service-descr__title-img"
+                src="img/articles/1title.webp"
+                alt=""
+              />
+              <p class="service-descr__p">
+                Выбрав нашу компанию для проведения инженерно-экологических
+                изысканий вы получаете следующие преимущества:
+              </p>
+              <p class="service-descr__p">
+                Для Вас будет работать компания с 26 летним опытом работ, и с
+                накопленными данными по инженерно-экологическим изысканиям за
+                последние 26 лет.
+              </p>
+              <p class="service-descr__p">
+                На основе наших данных можем делать выводы о тенденциях
+                изменений инженерно-экологических условий. Это позволит выдать
+                вам заключение с большой точностью, а также понять,
+                предотвратить негативные последствия
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3
+                class="service-descr__h3 service-descr__h3_2"
+                id="service-descr__h3_2"
+              >
+                Подробнее об инженерно-экологических изысканиях и схеме
+                сотрудничества
+              </h3>
+              <p class="service-descr__p">
+                Компетентность. Благодаря постоянному профессиональному
+                совершенствованию именно нас выбирают для изысканий на самые
+                крупны и сложные объекты. Именно мы провели полный спектр работ
+                по инженерно экологическим изысканиям для всех без исключения
+                комплексов ММДМ «Москва Сити», для Башни Россия, именно нам была
+                предложена почетная обязанность изысканий для завода «ЗИЛ» и
+                много других объектов. Именно у нас работают лучшие
+                узкоспециализированные эксперты, с научными степенями по типам
+                различных изысканий, с которыми вы можете познакомится лично или
+                ознакомится с их статьями на нашем сайте.
+              </p>
+              <p class="service-descr__p">
+                Именно у нас детально расписаны, задокументированы и
+                структурированы все типы работы, их последовательность, все
+                возможные решения отдельных задач. Вам это даст уверенность в
+                качестве, в обозначенных сроках работ. Более того, для Вас,
+                дорогие клиенты будет удобно работать с компанией в которой все
+                до мелочей продумано.
+              </p>
+              <p class="service-descr__p">
+                *Вы можете получить бесплатную консультацию по вопросам
+                инженерно-экологических изысканий для вашего объекта, звоните по
+                телефону: 8 (495) 755-02-29
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3
+                class="service-descr__h3 service-descr__h3_3"
+                id="service-descr__h3_3"
+              >
+                Подробнее об инженерно-экологических изысканиях и схеме
+                сотрудничества
+              </h3>
+              <p class="service-descr__p">
+                Инженерно-экологические изыскания – это комплексное изучение
+                природных и техногенных условий территории для экологического
+                обоснования строительства и иной деятельности с целью
+                предотвращения, снижения или ликвидации неблагоприятных
+                экологических последствий.
+              </p>
+              <p class="service-descr__p" style="font-weight: 700">
+                Инженерно-экологические изыскания осуществляются для разработки
+                проектов:
+              </p>
+              <ul class="service-descr__ul">
+                <li class="service-descr__li">
+                  строительства зданий и сооружений разного характера сложности;
+                </li>
+                <li class="service-descr__li">
+                  строительства инженерных коммуникаций;
+                </li>
+                <li class="service-descr__li">
+                  комплексного благоустройства и озеленения;
+                </li>
+                <li class="service-descr__li">рекультивации территорий;</li>
+                <li class="service-descr__li">реабилитации водных объектов;</li>
+                <li class="service-descr__li">
+                  обоснования санитарно-защитных зон предприятий;
+                </li>
+                <li class="service-descr__li">
+                  контроля качества проведения рекультивационных работ.
+                </li>
+              </ul>
+              <p class="service-descr__p" style="font-weight: 700">
+                Инженерно-экологические изыскания включают в себя:
+              </p>
+              <ul class="service-descr__ul">
+                <li class="service-descr__li">
+                  сбор, обработку и анализ опубликованных и архивных, фондовых
+                  материалов и данных о состоянии природной среды;
+                </li>
+                <li class="service-descr__li">
+                  маршрутные наблюдения с общим описанием природной среды,
+                  источников и визуальных признаков загрязнения;
+                </li>
+                <li class="service-descr__li">
+                  проходку горных выработок с целью определения условий
+                  распространения загрязнений и проведения геоэкологического
+                  опробования;
+                </li>
+                <li class="service-descr__li">
+                  опробование почво-грунтов, поверхностных и подземных вод и
+                  определение в них загрязненителей;
+                </li>
+                <li class="service-descr__li">
+                  исследование и оценку радиационной обстановки ( МЭД,
+                  гамма-съёмка, ЕРН грунта, измерение плотности потока радона из
+                  почвы, измерение ЭРОА радона закрытых помещений);
+                </li>
+                <li class="service-descr__li">газохимические исследования;</li>
+                <li class="service-descr__li">
+                  исследование и оценку физических воздействий (шум, вибрация);
+                </li>
+                <li class="service-descr__li">
+                  эколого-гидрогеологические исследования;
+                </li>
+                <li class="service-descr__li">
+                  медико-биологические и санитарно-эпидемиологические
+                  исследования;
+                </li>
+                <li class="service-descr__li">
+                  стационарные наблюдения (экологический мониторинг);
+                </li>
+                <li class="service-descr__li">
+                  камеральную обработку материалов и составление технического
+                  отчета, прогнозирование возможных изменений экологической
+                  обстановки при реализации строительных проектов.
+                </li>
+                <li class="service-descr__li">
+                  Специалисты фирмы НПО «НОЭКС» быстро и качественно выполнят
+                  полный перечень экологических исследований для разработки
+                  проектов строительства любой сложности и назначения.
+                </li>
+                <li class="service-descr__li">
+                  Программа инженерно-экологических изысканий составляется в
+                  соответствии с Техническим заданием Заказчика и
+                  регламентируется требованиями действующих нормативных
+                  документов.
+                </li>
+              </ul>
+              <p class="service-descr__p" style="font-weight: 700">
+                Для проведения инженерно-экологических изысканий Заказчиком
+                предоставляются:
+              </p>
+              <ul class="service-descr__ul">
+                <li class="service-descr__li">
+                  Техническое задание на инженерно-экологические изыскания;
+                </li>
+                <li class="service-descr__li">
+                  Геоподоснова (план в масштабе 1:500) с обозначенными границами
+                  участка и с нанесенными контурами проектируемого здания или
+                  сооружения;
+                </li>
+                <li class="service-descr__li">
+                  комплексного благоустройства и озеленения;
+                </li>
+                <li class="service-descr__li">
+                  Ситуационный план (масштаб 1:2000), например — кадастровый
+                  план;
+                </li>
+                <li class="service-descr__li">
+                  Документы на право пользования участком.
+                </li>
+              </ul>
+              <p class="service-descr__p" style="font-weight: 700">
+                Гарантией качества изысканий являются обязательные приложения к
+                отчету:
+              </p>
+              <ul class="service-descr__ul">
+                <li class="service-descr__li">
+                  копия свидетельства о вступлении в СРО;
+                </li>
+                <li class="service-descr__li">
+                  копия аттестата аккредитации лабораторного центра;
+                </li>
+                <li class="service-descr__li">
+                  копия технического задания с печатью проектной организации;
+                </li>
+                <li class="service-descr__li">
+                  протоколы полевых и лабораторных работ согласно нормативных
+                  документов, предусмотренных законодательством РФ для этих
+                  видов исследований (СП 11-102-97 и другие).
+                </li>
+              </ul>
+              <p class="service-descr__p">
+                Результаты изысканий подтверждаются (по желанию Заказчика)
+                санитарно-эпидемиологическими заключениями органов
+                Роспотребнадзора и входят в состав проектно-сметной
+                документации.
+              </p>
+              <p class="service-descr__p">
+                Благодаря профессиональным экологическим исследованиям
+                выявляются все имеющиеся негативные факторы, разрабатываются
+                рекомендации по их устранению или сведению их воздействия на
+                окружающую среду к минимуму
+              </p>
+            </div>
+            <div class="service-descr__item">
+              <h3
+                class="service-descr__h3 service-descr__h3_4"
+                id="service-descr__h3_4"
+              >
+                О стоимости инженерно-экологических изысканий
+              </h3>
+              <p class="service-descr__p">
+                Расчет сметной стоимости работ производится согласно
+                «Справочника базовых цен на инженерно-экологические изыскания» в
+                ценах 1991 года с учетом поправочных инфляционных коэффициентов,
+                ежеквартально устанавливаемых Госстроем России.
+              </p>
+              <p class="service-descr__p">
+                Каждый проектируемый объект индивидуален, поэтому более точную
+                информацию о составе работ, сроках, стоимости
+                инженерно-экологических изысканий можно получить у специалистов
+                нашей компании, которые имеют опыт до 20 лет и даже более, и
+                обладают уникальными фондовыми материалами на всю территорию
+                Московского региона.
+              </p>
+
+              <p
+                class="service-descr__p"
+                style="display: flex; flex-wrap: wrap; gap: 10px"
+              >
+                Свяжитесь с нами сейчас:
+
+                <a href="tel:+7(495)755-02-29" class="contacts-list__link">
+                  <span class="contacts-list__link-span">
+                    +7(495)755-02-29
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+    <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="container">
+      <div class="footer__body">
+        <div class="footer__item">
+          <img class="footer__logo" src="img/logo.svg" alt="логотип" />
+          <span class="footer__logo-txt">
+            Инженерные изыскания <br />
+            в строительстве
+          </span>
+          <a href="#" class="footer__tel">
+            <svg width="16" height="16" style="margin-right: 20px">
+              <use xlink:href="img/sprites/sprite.svg#phone-call"></use>
+            </svg>
+            <span> +7 (495) 755-02-29 </span>
+          </a>
+          <div class="header-social">
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="header-social__item">
+              <svg class="header__phone-icon-mob" width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-projects.html" class="footer__link"> Проекты </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-about.html" class="footer__link"> О нас </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-services.html" class="footer__link"> Услуги </a>
+            </li>
+          </ul>
+          <div class="footer__dev"></div>
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-prices.html" class="footer__link"> Цены </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-articles.html" class="footer__link"> Статьи </a>
+            </li>
+            <li class="footer__li">
+              <a href="/page-vacancy.html" class="footer__link"> Вакансии </a>
+            </li>
+          </ul>
+          <div class="footer__dev"></div>
+          <ul class="footer__list">
+            <li class="footer__li">
+              <a href="/page-contacts.html" class="footer__link"> Контакты </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <ul class="footer-social">
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__li">
+              <a href="#" class="footer-social__link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="footer__rules">
+      НОЭКС. Все права защищены 2021©. Инженерные изыскания с 1999 года.
+    </p>
+  </div>
+</footer>
+
+<div class="popup popup_main-popup hide">
+  <div class="main-popup">
+    <div class="main-popup__header">
+      <h3 class="main-popup__title">Оставить заявку</h3>
+      <div class="popup-close popup-close_esc"></div>
+    </div>
+    <div class="main-popup__body">
+      <form action="#" class="main-form">
+        <div class="main-form__item">
+          <span class="main-form__span">Имя</span>
+          <input
+            type="text"
+            name="phone"
+            class="main-form__input"
+            placeholder="Введите имя"
+            required
+            maxlength="14"
+          />
+        </div>
+        <div class="main-form__item">
+          <span class="main-form__span">Телефон</span>
+          <input
+            type="text"
+            name="phone"
+            class="main-form__input"
+            placeholder="+7 (---) --- -- --"
+            required
+            maxlength="14"
+          />
+        </div>
+        <div class="main-form__item">
+          <span class="main-form__span">Электронная почта</span>
+          <input
+            type="text"
+            name="email"
+            class="main-form__input"
+            placeholder="@"
+          />
+        </div>
+        <div class="main-form__item main-form__item_politic">
+          <p class="main-form__politic">
+            Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку
+            персональных данных
+          </p>
+        </div>
+        <div class="main-form__item">
+          <div>
+            <button type="submit" class="main-btn main-btn_yellow">
+              отправить
+            </button>
+          </div>
+          <div style="margin-top: 10px">
+            <button type="button" class="main-btn main-btn_gray popup-close">
+              закрыть
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
